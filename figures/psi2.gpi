@@ -1,0 +1,25 @@
+set terminal postscript color enhanced eps dashed 'Times-Roman' 24
+set border 31 linewidth 3
+set output 'psi2.eps'
+set size square 1.0
+set pm3d map
+unset key
+set multiplot
+set mapping cylindrical
+set parametric
+set isosamples 500
+r = 10
+set urange[0:r] # radius
+set vrange[0:360] # angle
+set xrange[-r:r]
+set yrange[-r:r]
+set cbrange[0.0:0.35]
+set xlabel 'x (osc. units)' offset -2,0
+set ylabel 'y (osc. units)' offset 0,0
+set zlabel 'V({/Symbol r},{/Symbol j},z=0) (osc. units)' offset 1,1
+set format x '%g'
+set format y '%g'
+set format z '%g'
+set xzeroaxis
+set yzeroaxis
+splot '../fort.1000' u 1:2:3 every 4:4 w pm3d

@@ -1,0 +1,19 @@
+CHANGELOG : ITPPRP
+
+dev
+
+    * developing some minor improvements to provide additional 
+      flexability for initial state wave functions that will be helpful
+      in studying the Thomas-Fermi approximation for a quantized vortex
+      derived in one of the appendices of M. C. Kandes, "Modeling the 
+      Effects of Inertial Forces on Bose-Einstein Condensates in 
+      Rotating Frames of Reference", Ph.D. dissertation, Claremont 
+      Graduate University & San Diego State University (2015).
+
+2016/09/09 v0.9.0
+
+    + a rebuild of ITPPRP from M. C. Kandes, "Multimode Interferometry 
+      of Bose-Einstein Condensates in a Circular Waveguide", M.S. 
+      thesis, San Diego State University (2009), which contains a copy 
+      of the original source code for the project in one of its 
+      appendices.

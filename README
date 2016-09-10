@@ -1,0 +1,57 @@
+README : itpprp
+
+DESCRIPTION
+
+    ITPPRP is a Fortran-based program that finds the ground state wave 
+    function of the two-dimensional, time-independent Gross-Pitaevskii 
+    equation in a polar coordinate system by using imaginary time 
+    propagation. 
+
+    ITPPRP is a modified version of NLSPRP written to propagate in 
+    imaginary time. As such, ITPPRP also uses the Peaceman-Rachford 
+    finite difference scheme to numerically approximate the solutions of
+    the Gross-Pitaevskii equation, with the azimuthal periodic boundary
+    conditions handled by employing the Sherman-Morrison algorithm. Zero 
+    Dirichlet boundary conditions are used at the inner and outer radial
+    boundaries of the computational grid.
+
+USAGE
+
+    make
+    nohup ./itpprp.x < itpprp.in &
+
+DEPENDENCIES
+
+    ITPPRP depends on the ZGTSV and XERBLA subroutines from LAPACK 
+    version 3.1.0. The source code for these subroutines as well as 
+    the LAPACK LICENSE file are distributed with ITPPRP and may be found
+    in libraries/lapack subdirectory.
+
+CITATION
+
+    To cite the use of this work in a scientific publication, please use
+    the following reference:
+
+    @mastersthesis{kandesmc:2009,
+        author = "Kandes, M. C.",
+        title  = "Multimode Interferometry of Bose-Einstein Condensates
+                  in a Circular Waveguide",
+        school = "San Diego State University",
+        year   = "2009"
+    }
+
+AUTHOR
+
+    Marty Kandes, Ph.D.
+
+COPYRIGHT
+     
+     Copyright (c) 2009, 2016 Martin Charles Kandes
+
+LICENSE
+
+    The MIT License (MIT)
+
+LAST UPDATED
+
+    Friday, September 9th, 2016
